@@ -1,0 +1,47 @@
+body{
+    background-color: aliceblue;
+}
+
+#finalScore {
+    font-size: 36px; 
+    font-weight: bold; 
+    color: #007bff; 
+}
+.end-container h1 {
+    margin-bottom: 10px; 
+    text-align: center; 
+    font-size: 24px; 
+}
+
+
+.end-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    height: 100vh;
+}
+
+
+.endbutton-container {
+    display: flex;
+    gap: 20px; 
+}
+
+
+.btn {
+    padding: 10px 20px; 
+    text-decoration: none; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+

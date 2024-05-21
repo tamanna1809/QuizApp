@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>endpage</title>
+    <link rel="stylesheet" href="endpage.css">
+</head>
+<body>
+    <div class="end-container">
+        
+            <h1>You scored:</h1>
+            <h1><span id="finalScore"></span></p></h1>
+        
+
+        <div class="endbutton-container">
+            <a href="quiz.html" class="btn">Restart</a>
+            <a href="home.html" class="btn">Home</a>
+        </div>
+    </div>
+
+
+
+
+<script>
+    const finalScore = localStorage.getItem('finalScore');
+    
+    if(finalScore !== null && finalScore !== undefined) {
+        document.getElementById('finalScore').textContent = finalScore;
+    } 
+
+    else {
+        document.getElementById('finalScore').textContent = 'Score not available';
+    }
+</script>
+
+
+
+</body>
+</html>

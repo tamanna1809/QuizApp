@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+}
+
+.quiz{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    gap: 25px;
+}
+
+.quiz h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.question-box{
+    height: 60%;
+    width: 60%;
+}
+
+
+
+.answer-buttons button{
+    background-color: white;
+    color: #222;
+    font-size: 25px;
+    /* font-weight: 500; */
+    height: 55px;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 3px 10px lightgray; */
+    /* box-shadow: 10px 10px 5px lightblue; */
+    padding :10px;
+    border: none;
+    margin : 10px 0px;
+    text-align: left;
+    /* border-radius: 4px; */
+    transition: all 0.3s;
+}
+
+.answer-buttons button:hover{
+    background-color: lightslategray;
+    color: white;
+}
+
+#nextBtn{
+    background-color: white;
+    color: rgb(43, 115, 204);
+    height: 40px;
+    width: 120px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px auto 0px;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.correct {
+    background-color: green !important;
+    color:white;
+}
+
+button.incorrect {
+    background-color: red !important;
+    color:white;
+}
+#progressBar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    border: 2px solid #56A5EB; 
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    width: 0%;
+    background-color: #56A5EB;
+    transition: width 0.3s;
+}
